@@ -1,0 +1,8 @@
+{
+  "name": "SIMULIM: Imuniteti Jospecifik",
+  "description": "Lojë simuluese edukative 2D për mekanizmat e mbrojtjes imunitare të lindur (jo-specifike) të trupit të njeriut në gjuhën shqipe.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
