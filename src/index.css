@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Archivo', system-ui, -apple-system, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+
+  h1, h2, h3, h4, .font-heading, button {
+    font-family: 'Archivo Black', 'Archivo', system-ui, sans-serif;
+  }
+
+  /* Prevent browser bounce, pull-to-refresh and gesture zooming on smartboard displays */
+  html, body {
+    overscroll-behavior: none;
+    touch-action: manipulation;
+  }
+
+  canvas {
+    touch-action: none;
+  }
+}
+
+/* Smartboard large touch target class (min 60x60 CSS pixels) */
+.smartboard-touch-target {
+  min-height: 60px;
+  min-width: 60px;
+}
+
+/* Neo-Brutalist custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-left: 2px solid #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fde047;
+  border: 2px solid #000;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
